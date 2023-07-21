@@ -38,7 +38,7 @@ def graph(df,option):
     units = {'Votes':'','Worldwide LT Gross':'($)','Year of Release':'','Movie Rating':'(/10)','Metascore':'(/100)','Duration':'(min)'}
 
     # allow user to select attribute for graph
-    graph_var = st.selectbox("Select attribute?",(numeric.columns))
+    graph_var = st.selectbox("Select attribute",(numeric.columns))
     # descending order
     df.sort_values(by=graph_var, ascending=False, inplace=True)
     fig = px.bar(x=df['Movie Title'],y=df[graph_var], labels=dict(x="Movie", y=graph_var+' '+units[graph_var]))
