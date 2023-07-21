@@ -10,3 +10,6 @@ tqdm==4.64.1
 streamlit==1.10.0
 streamlit-folium==0.6.15
 seaborn==0.12.1
+pandasql==0.7.3
+plotly==5.14.1
+sqlalchemy==1.4.46
